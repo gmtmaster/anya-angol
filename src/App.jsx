@@ -19,12 +19,8 @@ export default function App() {
                         backgroundAttachment: "scroll", // mobilbarát
                     }}
                 />
-                <div
-                    className="fixed inset-0 -z-10 bg-[rgba(20,20,20,0.3)] backdrop-blur-sm"
-                    style={{
-                        bottom: "env(safe-area-inset-bottom)",
-                    }}
-                />
+                <div className="fixed top-0 left-0 w-full h-[110vh] -z-10 bg-[rgba(20,20,20,0.3)] backdrop-blur-sm" />
+
                 {/* 🌿 Tartalom */}
                 <Navbar />
                 <Routes>
