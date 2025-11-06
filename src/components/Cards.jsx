@@ -116,7 +116,7 @@ export default function Cards() {
                     rel="noopener noreferrer"
                     className="mt-10 inline-block bg-[#F7A38D] border-t-2 border-white/30 text-white px-8 py-3 rounded-full shadow-lg hover:scale-105 transition-all duration-300 uppercase font-bold text-lg"
                 >
-                    Időpont foglalás
+                    Időpontfoglalás
                 </a>
             </div>
         </section>

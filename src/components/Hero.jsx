@@ -7,9 +7,7 @@ export default function Hero() {
 
                 {' '}– LÉPÉSRŐL LÉPÉSRE!
             </h1>
-            <h2 className="text-2xl md:text-3xl font-serif font-bold mb-12 ">
-                Lekrinszkiné Tóth Éva vagyok
-            </h2>
+
             <p className="max-w-2xl text-xl leading-relaxed">
                 Kivé válhatsz, ha beszélsz egy nyelvet?
                 <br />
