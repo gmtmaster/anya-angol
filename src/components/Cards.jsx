@@ -63,7 +63,7 @@ export default function Cards() {
     const toggle = (i) => setOpenIndex(openIndex === i ? null : i);
 
     return (
-        <section className="py-20 px-6 flex flex-col items-center text-center bg-white/80 border border-[#e8ddd7] rounded-[2rem] p-10 shadow-[0_6px_25px_rgba(0,0,0,0.06)] backdrop-blur-sm transition-all hover:shadow-lg hover:-translate-y-1 mx-4 my-16 shadow-md">
+        <section className="max-w-6xl mx-auto py-20 px-6 flex flex-col items-center text-center bg-white/80 border-t-2 border-white/90 rounded-[2rem] p-10 shadow-[0_6px_25px_rgba(0,0,0,0.06)] backdrop-blur-sm transition-all hover:shadow-lg mx-4 my-16 ">
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-[#3a2a1e]">
                 Szolgáltatásaim
             </h2>
@@ -72,17 +72,17 @@ export default function Cards() {
                 {items.map((item, i) => (
                     <div
                         key={i}
-                        className="card flex flex-col items-center w-full max-w-xs p-8 text-center bg-white border border-[#e8ddd7] rounded-3xl hover:shadow-lg transition-all"
+                        className="flex flex-col items-center w-full max-w-xs p-8 text-center bg-white/80 rounded-3xl border-t-2 border-white shadow-lg hover:shadow-md transition-all"
                     >
                         <h3 className="mb-4 text-2xl italic font-serif text-[#3a2a1e]">
                             {item.title}
                         </h3>
-                        <button
+                        <a
                             onClick={() => toggle(i)}
-                            className="bg-[#F7A38D] text-white px-6 py-2 rounded-full font-medium hover:opacity-90 transition-all"
+                            className="bg-[#F7A38D] border-t-2 border-white/30 text-white px-8 py-3 rounded-full shadow-lg hover:scale-105 transition-all duration-300  text-lg"
                         >
                             {openIndex === i ? "Bezárás" : "Részletek"}
-                        </button>
+                        </a>
 
                         {/* lenyíló rész */}
                         <div
@@ -110,9 +110,14 @@ export default function Cards() {
             </div>
 
             <div className="mt-8">
-                <button className="bg-[#F7A38D] text-white px-10 py-3 rounded-full shadow-md uppercase font-bold text-lg hover:opacity-90 transition-all">
-                    Időpontfoglalás
-                </button>
+                <a
+                    href="https://app.minup.io/book/lekrinszkine-toth-eva"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="mt-10 inline-block bg-[#F7A38D] border-t-2 border-white/30 text-white px-8 py-3 rounded-full shadow-lg hover:scale-105 transition-all duration-300 uppercase font-bold text-lg"
+                >
+                    Időpont foglalás
+                </a>
             </div>
         </section>
     );

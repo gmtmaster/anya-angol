@@ -1,18 +1,18 @@
 export default function Footer() {
     return (
-        <footer className="bg-[#FAD4C3] text-white border-t border-white/30 py-6 mt-24 rounded-t-4xl">
+        <footer className="bg-[#FAD4C3] text-white border-t-2 border-white/90 py-6 mt-24 rounded-t-4xl">
             <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 px-6 text-sm">
                 {/* Bal oldal */}
                 <div className="flex flex-wrap items-center justify-center sm:justify-start gap-4">
                     <a
-                        href="/aszf.pdf"
+                        href="/aszf"
                         className="hover:underline hover:opacity-90 transition"
                     >
                         ÁSZF
                     </a>
                     <span className="opacity-60">|</span>
                     <a
-                        href="/adatkezeles.pdf"
+                        href="/adatkezeles"
                         className="hover:underline hover:opacity-90 transition"
                     >
                         Adatkezelési tájékoztató

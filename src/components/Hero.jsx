@@ -17,12 +17,14 @@ export default function Hero() {
                 <br /> aki <strong>kapukat nyit</strong> új élmények felé,
                 <br /> és aki <strong>tartalmasabb életet</strong> él az angol nyelvtudás által.
             </p>
-            <button
-                href="/services"
-                className="mt-10 bg-button text-white px-8 py-3 rounded-full shadow-md hover:opacity-90 transition-all uppercase font-bold text-lg"
+            <a
+                href="https://app.minup.io/book/lekrinszkine-toth-eva"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-10 inline-block bg-[#F7A38D] border-t-2 border-white/30 text-white px-8 py-3 rounded-full shadow-lg hover:scale-105 transition-all duration-300 uppercase font-bold text-lg"
             >
                 Jelentkezem órára
-            </button>
+            </a>
         </section>
     );
 }

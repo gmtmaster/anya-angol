@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react"; // ikonokhoz: npm install lucide-react
 
@@ -23,7 +23,7 @@ export default function Navbar() {
                 </Link>
 
                 {/* Desktop menu */}
-                <div className="hidden md:flex gap-8 text-lg">
+                <div className="hidden md:flex gap-8 text-lg flex items-center">
                     <Link to="/" className={isActive("/")}>
                         Kezdőlap
                     </Link>
@@ -33,6 +33,14 @@ export default function Navbar() {
                     <Link to="/services" className={isActive("/services")}>
                         Szolgáltatások
                     </Link>
+                    <a
+                        href="https://app.minup.io/book/lekrinszkine-toth-eva"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-block text-[#F4A38D] font-semibold border-t-2 border-white/30 bg-[#FDF3E7] px-3 py-1 rounded-full shadow-lg hover:scale-105 transition-all duration-300 text-md"
+                    >
+                        Jelentkezz
+                    </a>
                 </div>
 
                 {/* Hamburger (mobile only) */}
@@ -71,6 +79,14 @@ export default function Navbar() {
                         >
                             Szolgáltatások
                         </Link>
+                        <a
+                            href="https://app.minup.io/book/lekrinszkine-toth-eva"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-block text-[#F4A38D] font-semibold border-t-2 border-white/30 bg-[#FDF3E7] px-3 py-1 rounded-full shadow-lg hover:scale-105 transition-all duration-300 text-md"
+                        >
+                            Jelentkezz
+                        </a>
                     </div>
                 </div>
             )}
