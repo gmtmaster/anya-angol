@@ -12,6 +12,16 @@ export default function App() {
     return (
         <LenisProvider>
             <Router>
+                {/* 🌫️ Háttér + blur overlay */}
+                <div
+                    className="fixed inset-0 -z-10 bg-[url('/hero.jpg')] bg-cover bg-center bg-no-repeat"
+                    style={{
+                        backgroundAttachment: "scroll", // mobilbarát
+                    }}
+                />
+                <div className="fixed inset-0 -z-10 bg-[rgba(20,20,20,0.3)] backdrop-blur-sm" />
+
+                {/* 🌿 Tartalom */}
                 <Navbar />
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -23,6 +33,5 @@ export default function App() {
                 <Footer />
             </Router>
         </LenisProvider>
-
     );
 }
