@@ -1,6 +1,6 @@
 export default function IntroSection() {
     return (
-        <section className=" px-8 py-24 bg-white rounded-[3rem] mx-6 mb-24">
+        <section className=" px-8 py-24 bg-white/80 border border-[#e8ddd7] rounded-[2rem] p-10 shadow-[0_6px_25px_rgba(0,0,0,0.06)] backdrop-blur-sm transition-all hover:shadow-lg hover:-translate-y-1 mx-6 mb-24">
 
             {/* Főcím */}
            <div className="rounded-3xl p-8">

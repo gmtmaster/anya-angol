@@ -63,7 +63,7 @@ export default function Cards() {
     const toggle = (i) => setOpenIndex(openIndex === i ? null : i);
 
     return (
-        <section className="py-20 px-6 flex flex-col items-center text-center bg-white rounded-[3rem] mx-4 my-16 shadow-md">
+        <section className="py-20 px-6 flex flex-col items-center text-center bg-white/80 border border-[#e8ddd7] rounded-[2rem] p-10 shadow-[0_6px_25px_rgba(0,0,0,0.06)] backdrop-blur-sm transition-all hover:shadow-lg hover:-translate-y-1 mx-4 my-16 shadow-md">
             <h2 className="text-3xl md:text-4xl font-serif font-bold mb-12 text-[#3a2a1e]">
                 Szolgáltatásaim
             </h2>
