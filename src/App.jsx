@@ -10,7 +10,7 @@ import Privacy from "./pages/Privacy.jsx";
 
 export default function App() {
     return (
-        <LenisProvider>
+
             <Router>
                 {/* 🌫️ Háttér + blur overlay */}
                 <div
@@ -32,6 +32,6 @@ export default function App() {
                 </Routes>
                 <Footer />
             </Router>
-        </LenisProvider>
+
     );
 }
