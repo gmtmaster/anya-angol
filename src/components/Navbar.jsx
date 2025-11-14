@@ -33,6 +33,9 @@ export default function Navbar() {
                     <Link to="/services" className={isActive("/services")}>
                         Szolgáltatások
                     </Link>
+                    <Link to="/blog" className={isActive("/blog")}>
+                        Cikkek
+                    </Link>
                     <a
                         href="https://app.minup.io/book/lekrinszkine-toth-eva"
                         target="_blank"
@@ -78,6 +81,13 @@ export default function Navbar() {
                             className={isActive("/services")}
                         >
                             Szolgáltatások
+                        </Link>
+                        <Link
+                            to="/blog"
+                            onClick={() => setMenuOpen(false)}
+                            className={isActive("/blog")}
+                        >
+                            Cikkek
                         </Link>
                         <a
                             href="https://app.minup.io/book/lekrinszkine-toth-eva"
