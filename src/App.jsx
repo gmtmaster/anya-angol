@@ -12,14 +12,6 @@ export default function App() {
     return (
 
             <Router>
-                {/* 🌫️ Háttér + blur overlay */}
-                <div
-                    className="fixed inset-0 -z-10 bg-[url('/hero.jpg')] bg-cover bg-center bg-no-repeat"
-                    style={{
-                        backgroundAttachment: "scroll", // mobilbarát
-                    }}
-                />
-                <div className="fixed top-0 left-0 w-full h-[110vh] -z-10 bg-[rgba(20,20,20,0.3)] backdrop-blur-sm" />
 
                 {/* 🌿 Tartalom */}
                 <Navbar />

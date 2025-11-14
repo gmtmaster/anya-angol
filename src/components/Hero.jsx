@@ -1,12 +1,15 @@
 export default function Hero() {
     return (
         <section className="flex flex-col items-center h-screen justify-center text-white text-center py-24 px-6">
-            <h1 className="text-4xl md:text-6xl font-serif font-bold mb-6">
-                BESZÉLJ ANGOLUL
-                {' '}<span className="bg-clip-text text-transparent bg-gradient-to-b from-[#FAD4C3] to-[#E67E55]">MAGABIZTOSAN</span>
 
-                {' '}– LÉPÉSRŐL LÉPÉSRE!
+            <h1 className="text-4xl md:text-6xl max-w-4xl font-serif font-bold mb-6 [text-shadow:0_3px_16px_rgba(0,0,0,0.5)]">
+                BESZÉLJ ANGOLUL{" "}
+                <span className="[text-shadow:none] bg-clip-text text-transparent bg-gradient-to-b from-[#FAD4C3] to-[#E67E55]">
+                MAGABIZTOSAN
+              </span>{" "}
+                – <br/> LÉPÉSRŐL LÉPÉSRE!
             </h1>
+
 
             <p className="max-w-2xl text-xl leading-relaxed">
                 Kivé válhatsz, ha beszélsz egy nyelvet?
